@@ -108,29 +108,23 @@ h1 {
     color: white
 }
 
-.aboutme-text{
-    height: 100%;
+.aboutme-text,.skills-container,
+.experience-container{
+    height: 94.2vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 .aboutme-p {
     text-indent: 5%;
     font-size: 1.3rem;
     line-height: 1.5rem;
-    margin: 1rem 10rem 1rem 10rem;
+    width: 100vh;
+    /* margin: 1rem 10rem 1rem 10rem; */
 }
 
-.skills-container{
-    height:100%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
-    
-    
-    
-}
+
 
 .row{
     padding:5rem 5rem 2rem 5rem;
@@ -161,9 +155,13 @@ h1 {
     padding: 0.2rem
 }
 
+
+
+
 .experience{
     background-color: white;
     height: 15rem;
-    width: 100%;
-    margin: 5rem 10rem 0 10rem;
+    width: 80%;
+   
+   
 }
