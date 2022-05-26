@@ -14,7 +14,7 @@ html {
 body{
     /* max-width: 1200px; */
     margin:0;
-    background-color:rgb(209, 205, 209);
+    background-color:#e5e5e5;
     
 }
 
@@ -32,8 +32,6 @@ body{
 }
 
 
-
-
 .nav-bar {
     display: flex;
     flex-direction: column;
@@ -41,12 +39,14 @@ body{
     position: fixed;
     /* padding: 1rem; */
     height: 100vh;
+    background-color:#14213d;
     
     
 }
 .name {
     display: block;
     padding: 1rem 1rem 0.3rem 1rem;
+    color: white;
     
 }
 .nav-links {
@@ -55,7 +55,8 @@ body{
     align-items: center;
     /* justify-content: space-between; */
     flex-grow: 6;
-    margin-top: 
+    /* margin-top:  */
+    color: white;
 }
 h3 {
     font-size: 3rem;
@@ -84,7 +85,7 @@ li {
 }
 .Home {
     text-align: center;
-    background-image: url('/assets/filler.png');
+    background-image: url('/assets/home-background.png');
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -103,6 +104,66 @@ li {
 h1 {
     padding: 0 0.3rem 0.3rem 0.3rem;
     font-size:xxx-large;
-    background-color: rgb(146, 47, 40);
+    background-color: #fca311;
     color: white
+}
+
+.aboutme-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutme-p {
+    text-indent: 5%;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 1rem 10rem 1rem 10rem;
+}
+
+.skills-container{
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    
+}
+
+.row{
+    padding:5rem 5rem 2rem 5rem;
+    width: 80%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 20px solid rgba(211, 211, 211, 0.549);
+    align-items:center;
+    /* margin-top: 3rem; */
+    /* filter: drop-shadow(30px 10px 20px #4444dd); */
+
+}
+.img-container{
+    height: 100%;
+    margin-bottom: 8rem;
+}
+
+
+.img-skill{
+    height: 6rem;
+    width: 6rem;
+}
+
+.skill-p{
+    text-align: center;
+    padding: 0.2rem
+}
+
+.experience{
+    background-color: white;
+    height: 15rem;
+    width: 100%;
+    margin: 5rem 10rem 0 10rem;
 }
