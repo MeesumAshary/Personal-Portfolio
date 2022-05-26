@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,22 +7,23 @@ html {
 * {
     box-sizing: border-box;
     border: 1px solid black !important;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Cinzel' ,sans-serif;
 
 }
 
 body{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin:0;
-    background-color:rgb(236,235,236);
+    background-color:rgb(209, 205, 209);
     
 }
 
 
 .nav-sect-container{
     display: flex;
-    margin-left: 15rem;
+    margin-left: 13.7rem;
     flex-direction: column;
+    
 }
 
 .sections {
@@ -28,18 +31,78 @@ body{
    
 }
 
+
+
+
 .nav-bar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
-    padding: 1rem;
+    /* padding: 1rem; */
     height: 100vh;
     
+    
+}
+.name {
+    display: block;
+    padding: 1rem 1rem 0.3rem 1rem;
     
 }
 .nav-links {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-grow: 6;
+    margin-top: 
+}
+h3 {
+    font-size: 3rem;
+}
+.FS-sub-heading{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* Formatting each section */
+.img1-container {
+    height: 25rem;
+    width: 25rem;
+}
+
+.profile-pic{
+    width:100% ;
+    border-radius: 50%;
+    /* margin: 4rem; */
+    
+}
+.Home {
+    text-align: center;
+    background-image: url('/assets/filler.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.home-text {
+    /* margin: 4rem 10rem; */
+    font-size: 2rem ;
+    line-height: 2.3rem;
+
+}
+
+h1 {
+    padding: 0 0.3rem 0.3rem 0.3rem;
+    font-size:xxx-large;
+    background-color: rgb(146, 47, 40);
+    color: white
 }
