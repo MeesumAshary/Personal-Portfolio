@@ -8,7 +8,7 @@
 		<title>Meesum Ashary's Portfolio</title>
 		<link rel="stylesheet" href="/styles/reset.css" />
 		<link rel="stylesheet" href="/styles/style.css" />
-		<script src="/js/script.js"></script>
+		<script defer src="/js/script.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -21,14 +21,14 @@
 					<p class="FS-sub-heading">Fullstack Developer</p>
 				</div>
 				<ul class="nav-links">
-					<li><a href=""></a>Home</li>
-					<li><a href=""></a>About Me</li>
-					<li><a href=""></a>Skills</li>
-					<li><a href=""></a>Experience</li>
-					<li><a href=""></a>Projects</li>
-					<li><a href=""></a>Education</li>
-					<li><a href=""></a>Interests</li>
-					<li><a href=""></a>Contact</li>
+					<li><a href="#home"></a>Home</li>
+					<li><a href="#about-me"></a>About Me</li>
+					<li><a href="#skills"></a>Skills</li>
+					<li><a href="#experience"></a>Experience</li>
+					<li><a href="#projects"></a>Projects</li>
+					<li><a href="#education"></a>Education</li>
+					<li><a href="#interests"></a>Interests</li>
+					<li><a href="#contact"></a>Contact</li>
 				</ul>
 			</nav>
 
@@ -37,7 +37,7 @@
 					<div class="img1-container">
 						<img class="profile-pic" src="/assets/DSC_3591 copy.jpg" alt="" />
 					</div>
-					<p class="home-text">
+					<p class="home-text" id="home">
 						Full stack software engineering with a strong Mechanical and
 						Aerospace Engineering background.
 					</p>
@@ -77,7 +77,7 @@
 						</p>
 					</div>
 				</section>
-				<section class="sections">
+				<section class="sections" id="skills">
 					<h1>Skills</h1>
 					<div class="skills-container">
 						<div class="row">
@@ -118,68 +118,168 @@
 						</div>
 					</div>
 				</section>
-				<section class="sections">
+				<section class="sections" id="experience">
 					<h1>Experience</h1>
 					<div class="experience-container">
 						<div class="experience"></div>
 						<div class="experience"></div>
 					</div>
 				</section>
-				<section class="sections">
+				<section class="sections" id="projects">
 					<h1>Projects</h1>
 					<div class="proj-container">
 						<div class="proj-card"></div>
 						<div class="proj-card"></div>
 					</div>
 				</section>
-				<section class="sections">
+				<section class="sections" id="education">
 					<h1>Education</h1>
 					<div class="ed-container">
 						<div class="ed-card"></div>
 						<div class="ed-card"></div>
 					</div>
 				</section>
-				<section class="sections">
+				<section class="sections" id="interests">
 					<h1>Interests</h1>
 					<header>
-						<img class="poetry-logo" src="/assets/IMG_0037.jpeg" alt="" />
+						<img
+							class="poetry-logo"
+							src="/assets/readmeesumpoetry-logo.png"
+							alt=""
+						/>
 						<h2>ReadMeesumPoetry</h2>
 					</header>
 					<div class="poetry-card-container">
 						<div class="poetry-row">
-							<div class="poetry-card" id="munif1"><img class="poetry-img " src="assets/Munificent-I.png" alt="" /></div>
-							<div class="poetry-card"><img class="poetry-img" src="assets/Munificent-II.png" alt="" /></div>
-							<div class="poetry-card"><img class="poetry-img" src="/assets/Forever-Learning.png" alt="" /></div>
+							<div class="poetry-card" id="munif1">
+								<img class="poetry-img" src="assets/Munificent-I.png" alt="" />
+							</div>
+							<div class="poetry-card" id="munif2">
+								<img class="poetry-img" src="assets/Munificent-II.png" alt="" />
+							</div>
+							<div class="poetry-card" id="fl">
+								<img
+									class="poetry-img"
+									src="/assets/Forever-Learning.png"
+									alt=""
+								/>
+							</div>
 						</div>
 						<div class="poetry-row">
-							<div class="poetry-card"><img class="poetry-img" src="assets/Grief.png" alt="" /></div>
-							<div class="poetry-card"><img class="poetry-img" src="assets/Superman.png" alt="" /></div>
-							<div class="poetry-card"><img class="poetry-img" src="assets/Geisel.png" alt="" /></div>
+							<div class="poetry-card" id="grief">
+								<img class="poetry-img" src="assets/Grief.png" alt="" />
+							</div>
+							<div class="poetry-card" id="superman">
+								<img class="poetry-img" src="assets/Superman.png" alt="" />
+							</div>
+							<div class="poetry-card" id="geisel">
+								<img class="poetry-img" src="assets/Geisel.png" alt="" />
+							</div>
 						</div>
 					</div>
 				</section>
-				<section class="sections">
+				<section class="sections" id="contact">
 					<h1>Contact</h1>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-						provident voluptates quis molestias voluptas? Ea facilis animi
-						dolorem tempore tenetur consequuntur recusandae quaerat harum sequi
-						ipsam doloribus impedit minus, soluta mollitia saepe perspiciatis
-						magni et eius culpa vitae! Repellat quae accusantium at, ratione
-						nihil magnam labore aliquam expedita! Aliquam, et delectus rerum
-						nulla, dolor iste modi quae nostrum cupiditate repellat vel neque
-						dolorum est ab cum necessitatibus provident quaerat minus dicta?
-						Eaque aperiam nostrum culpa, eveniet voluptatum odit consequuntur
-						iste velit a magnam animi consectetur numquam delectus alias
-						repellat, rerum dicta deleniti quis exercitationem sequi! Itaque
-						ipsam aperiam ratione officia?
-					</p>
+					<div class="contact-container">
+						<div class="contact-links">
+							<p><a href="mailto:meesumashary@gmail.com">Email Me</a></p>
+							<p>
+								<a href="https://www.linkedin.com/in/meesumashary/"
+									>My linkedIn</a
+								>
+							</p>
+							<p><a href="https://github.com/MeesumAshary">My Gihub</a></p>
+						</div>
+						<div class="form">
+							<form action="https://formspree.io/f/mayvvjjj" method="POST">
+								<label>
+									Your Name:
+									<input type="name" name="email" />
+								</label>
+								<label>
+									Your email:
+									<input type="email" name="email" />
+								</label>
+								<label>
+									Your message:
+									<textarea name="message"></textarea>
+								</label>
+								<!-- your other form fields go here -->
+								<button type="submit">Send</button>
+							</form>
+						</div>
+					</div>
 				</section>
 			</main>
 		</div>
+		<!-- Modals Begin here -->
+		<!-- First Modal -->
 		<div class="modal-bg">
 			<div class="modal munifI-poem">
-				<img class="poetry-img munifI-img" src="assets/Munificent-I.png" alt="" />
+				<img
+					class="poetry-img munifI-img"
+					src="assets/Munificent-I.png"
+					alt=""
+				/>
+				<!-- First Modal Close -->
+				<div class="modal-close-container">
+					<img class="modal-close" src="/assets/X.png" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<!-- Second Modal -->
+		<div class="modal-bg-2">
+			<div class="modal2 munifII-poem">
+				<img
+					class="poetry-img munifII-img"
+					src="assets/Munificent-II.png"
+					alt=""
+				/>
+			</div>
+			<!--Second Modal Close  -->
+			<div class="modal-close-container-2">
+				<img class="modal-close" src="/assets/X.png" alt="" />
+			</div>
+		</div>
+		<!-- Third Modal -->
+		<div class="modal-bg-3">
+			<div class="modal3 FL-poem">
+				<img class="poetry-img FL" src="assets/Forever-Learning.png" alt="" />
+			</div>
+			<!-- Third Modal Close -->
+			<div class="modal-close-container-3">
+				<img class="modal-close" src="/assets/X.png" alt="" />
+			</div>
+		</div>
+		<!-- Fourth Modal -->
+		<div class="modal-bg-4">
+			<div class="modal4 grief-poem">
+				<img class="poetry-img grief" src="/assets/Grief.png" alt="" />
+			</div>
+			<!-- Fourth Modal Close -->
+			<div class="modal-close-container-4">
+				<img class="modal-close" src="/assets/X.png" alt="" />
+			</div>
+		</div>
+		<!-- Fifth Modal -->
+		<div class="modal-bg-5">
+			<div class="modal5 superman-poem">
+				<img class="poetry-img superman" src="assets/Superman.png" alt="" />
+			</div>
+			<!-- Fifth Modal Close -->
+			<div class="modal-close-container-5">
+				<img class="modal-close" src="/assets/X.png" alt="" />
+			</div>
+		</div>
+		<!-- Sixth Modal -->
+		<div class="modal-bg-6">
+			<div class="modal6 geisel-poem">
+				<img class="poetry-img geisel" src="assets/Geisel.png" alt="" />
+			</div>
+			<!-- Sixth Modal Close -->
+			<div class="modal-close-container-6">
+				<img class="modal-close" src="/assets/X.png" alt="" />
 			</div>
 		</div>
 	</body>

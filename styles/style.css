@@ -48,7 +48,15 @@ body{
     display: block;
     padding: 1rem 1rem 0.3rem 1rem;
     color: white;
+    border-bottom: 2px solid #e5e5e5;
     
+}
+.FS-sub-heading{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+h3 {
+    font-size: 3rem;
 }
 .nav-links {
     display: flex;
@@ -59,23 +67,22 @@ body{
     /* margin-top:  */
     color: white;
 }
-h3 {
-    font-size: 3rem;
-}
-.FS-sub-heading{
-    margin-top: 1rem;
-    font-size: 1rem;
-}
 
 li {
     margin: 1rem 0;
     font-size: 1.2rem;
+}
+li:hover{
+    text-decoration: underline;
+    animation-delay: 2s;
+
 }
 
 /* Formatting each section */
 .img1-container {
     height: 25rem;
     width: 25rem;
+    border-radius: 50%;
 }
 
 .profile-pic{
@@ -123,6 +130,7 @@ h1 {
     line-height: 1.5rem;
     width: 100vh;
     box-shadow: -10px 1px 6px #14213d;
+    background-color: white;
 }
 
 
@@ -189,7 +197,7 @@ h1 {
     box-shadow: 10px 5px 5px #14213d;
 }
 
-
+/* Interests Section */
 .poetry-logo{
     height: 5rem;
 }
@@ -224,7 +232,11 @@ h1 {
     width:100%;
 }
 
-.modal-bg {
+.poetry-img:hover{
+    opacity: 0.6;
+}
+
+.modal-bg, .modal-bg-2, .modal-bg-3, .modal-bg-4, .modal-bg-5,.modal-bg-6 {
     position:fixed;
     width:100%;
     height:100vh;
@@ -239,14 +251,38 @@ h1 {
     transition: opacity 2s; */
 }
 
-.bg-active{
-    z-index:100;
-    display:block;
-    animation: fadeIn 1s;
+.bg-active, .bg-active-2,.bg-active-3,
+.bg-active-4,
+.bg-active-5,
+.bg-active-6{
+    z-index:10;
+    display:flex;
+    animation: fadeIn 2s;
 }
 
-.modal{
+.modal, .modal2, .modal3, .modal4, .modal5, .modal6{
+  
     background: white;
     width:40%;
     height: 76.41%;
 }
+
+.modal-close-container, .modal-close-container-2,.modal-close-container-3, .modal-close-container-4, .modal-close-container-5, .modal-close-container-6{
+    height:2rem;
+    width:2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor:pointer;
+}
+.modal-close{
+    height:100%;
+    width:100%;
+    
+}
+
+/* Contact Section */
+.contact-container{
+    display fl
+}
+.contact-links
