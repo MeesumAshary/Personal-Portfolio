@@ -21,14 +21,14 @@
 					<p class="FS-sub-heading">Fullstack Developer</p>
 				</div>
 				<ul class="nav-links">
-					<li><a href="#home"></a>Home</li>
-					<li><a href="#about-me"></a>About Me</li>
-					<li><a href="#skills"></a>Skills</li>
-					<li><a href="#experience"></a>Experience</li>
-					<li><a href="#projects"></a>Projects</li>
-					<li><a href="#education"></a>Education</li>
-					<li><a href="#interests"></a>Interests</li>
-					<li><a href="#contact"></a>Contact</li>
+					<li><a ahref="#home"></a>Home</li>
+					<li><a ahref="#about-me"></a>About Me</li>
+					<li><a ahref="#skills"></a>Skills</li>
+					<li><a ahref="#experience"></a>Experience</li>
+					<li><a ahref="#projects"></a>Projects</li>
+					<li><a ahref="#education"></a>Education</li>
+					<li><a ahref="#interests"></a>Interests</li>
+					<li><a ahref="#contact"></a>Contact</li>
 				</ul>
 			</nav>
 
@@ -182,32 +182,32 @@
 					<h1>Contact</h1>
 					<div class="contact-container">
 						<div class="contact-links">
-							<p><a href="mailto:meesumashary@gmail.com">Email Me</a></p>
+							<p><a id="email-me"  href="mailto:meesumashary@gmail.com"><span><img src="/assets/003-email.png" alt=""></span> meesumashary@gmail.com</a></p>
 							<p>
-								<a href="https://www.linkedin.com/in/meesumashary/"
-									>My linkedIn</a
+								<a  id="linkedIn" href="https://www.linkedin.com/in/meesumashary/"
+									><span><img src="/assets/001-linkedin.png" alt=""></span> My linkedIn</a
 								>
 							</p>
-							<p><a href="https://github.com/MeesumAshary">My Gihub</a></p>
+							<p><a id="git-hub"  href="https://github.com/MeesumAshary"><span><img src="/assets/002-github.png" alt=""></span> My Github</a></p>
 						</div>
-						<div class="form">
-							<form action="https://formspree.io/f/mayvvjjj" method="POST">
-								<label>
+						
+							<form>
+								<label class="your-name">
 									Your Name:
-									<input type="name" name="email" />
+									<input id="your-name" type="name" name="email" type="text" />
 								</label>
-								<label>
+								<label class="your-email">
 									Your email:
-									<input type="email" name="email" />
+									<input id="your-email"  type="email" name="email" type="text"/>
 								</label>
-								<label>
+								<label class="your-message">
 									Your message:
-									<textarea name="message"></textarea>
+									<textarea id="textarea-message" name="message" type="text"></textarea>
 								</label>
 								<!-- your other form fields go here -->
 								<button type="submit">Send</button>
 							</form>
-						</div>
+						
 					</div>
 				</section>
 			</main>

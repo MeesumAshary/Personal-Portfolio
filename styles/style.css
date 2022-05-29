@@ -9,6 +9,8 @@ html {
     box-sizing: border-box;
     /* border: 1px solid black !important; */
     font-family: 'Cinzel' ,sans-serif;
+    /* padding: 0;
+    margin:0; */
 
 }
 
@@ -22,7 +24,7 @@ body{
 
 .nav-sect-container{
     display: flex;
-    margin-left: 13.7rem;
+    margin-left: 13.4rem;
     flex-direction: column;
     
 }
@@ -283,6 +285,71 @@ h1 {
 
 /* Contact Section */
 .contact-container{
-    display fl
+    height: 95.4vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
-.contact-links
+form{
+    height:50%;
+    width:50%;
+    padding:2rem;
+    /* margin-left: 5rem; */
+    margin-right: 5rem;
+
+
+}
+.your-name, .your-email, .your-message,form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color:#fca311
+    
+}
+
+textarea, input{
+    color:#fca311;
+    background-color:#14213d ;
+    border-radius: 10px;
+
+}
+
+#textarea-message{
+    height:10rem;
+    width: 20rem;
+
+}
+button{
+    width:25%;
+    align-self: center;
+    margin: top 2rem;
+    background-color: #14213d;
+    color: white;
+
+}
+.contact-links{
+    height:50%;
+    width: 50%;
+    margin-right: 20rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+#git-hub,#email-me,#linkedIn{
+    text-decoration: none;
+    color:#14213d;
+    height:100%;
+    padding-bottom: 2rem;
+
+}
+#git-hub:hover,
+#email-me:hover,
+#linkedIn:hover{
+    text-decoration: underline;
+    color: #fca311;
+}
