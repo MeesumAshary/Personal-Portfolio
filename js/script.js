@@ -1,8 +1,6 @@
-
 /* ------Constants------ */
 // This array stores all the  objects that are made when user submits the form.
 const objectArray = [];
-
 
 /* ------Class------ */
 class User {
@@ -37,6 +35,10 @@ const modalCloseContainer4 = document.querySelector('.modal-close-container-4');
 const modalCloseContainer5 = document.querySelector('.modal-close-container-5');
 const modalCloseContainer6 = document.querySelector('.modal-close-container-6');
 
+// The following code allows us to use side nav elements
+const hamburgerEl = document.querySelector('.hamburger-img');
+const navClose=document.querySelector('.nav-close')
+const smallNav = document.querySelector('.small-nav');
 // The following code is for the form on the 'Contact' section
 
 /* ------Event Listeners------ */
@@ -91,12 +93,20 @@ console.log(btn);
 
 btn.addEventListener('click', createObjects);
 
+// The following code activates small Nav
+hamburgerEl.addEventListener('click', () => {
+	smallNav.classList.add('activate-nav')
+});
+navClose.addEventListener('click',() => {
+	smallNav.classList.remove('activate-nav');
+});
+
 /*----- functions -----*/
 // The following function creates an object every time a user submits a form. All objects are then stored in an array called 'objectArray'. the function also clears all text from
 
 function createObjects(event) {
 	event.preventDefault();
-    objectArray.push(
+	objectArray.push(
 		new User(nameInput.value, emailInput.value, yourMessage.value)
 	);
 	console.log(objectArray);

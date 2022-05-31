@@ -7,14 +7,14 @@ html {
 
 * {
     box-sizing: border-box;
-    border: 1px solid black !important;
+    /* border: 1px solid black !important; */
     font-family: 'Cinzel' ,sans-serif;
    
 
 }
 
 body{
-    /* max-width: 1200px; */
+    max-width: 1600px;
     margin:0;
     background-color:#e5e5e5;
     
@@ -23,7 +23,7 @@ body{
 
 .sect-container{
     display: flex;
-    margin-left: 13.4rem;
+    margin-left: 14.5rem;
     flex-direction: column;
     
 }
@@ -33,11 +33,41 @@ body{
     /* width:100vh; */
    
 }
-
-.small-nav{
-    display:none;
+.small-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    /* padding: 1rem; */
+    height: 100vh;
+    background-color: #14213d;
+    opacity: 0.8;
 }
 
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* justify-content: space-between; */
+    flex-grow: 6;
+    /* margin-top:  */
+    text-decoration: none;
+    color: white;
+    font-family: 'Cinzel';
+
+}
+.small-nav{
+
+    display:none;
+}
+.hamburger-img{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display:none;
+}
 
 .nav-bar {
     display: flex;
@@ -56,7 +86,8 @@ body{
     color: white;
     border-bottom: 2px solid #e5e5e5;
     color:#fca311;
-    font-family:'Cinzel'
+    font-family:'Cinzel';
+    border-bottom: 3px solid #fca311;
     
 }
 .FS-sub-heading{
@@ -83,6 +114,10 @@ h3 {
     width:1.5rem;
     margin: 0 1rem 0 2rem;
     align-self: center;
+}
+.nav-close{
+    height:2rem;
+    width:2rem;
 }
 a{
     color: white;
@@ -119,7 +154,7 @@ li:hover{
 }
 .Home {
     text-align: center;
-    background-image: url('/assets/home-background.png');
+    background-image: url('/assets/home-background.jpeg');
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -207,12 +242,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+        box-shadow: 10px 5px 5px #14213d;
+            display: flex;
 }
 
 .img-skill{
     height:80%;
     width:80%;
 }
+
+/* Experience Section */
 
 
 .experience-card{
@@ -221,9 +260,24 @@ h1 {
     width: 80%;
     box-shadow: 10px 5px 5px #14213d;display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.exp-heading{
+    font-size:xx-large;
+    font-weight:900;
+    text-decoration: underline;
+    
+}
+.exp-sub-heading{
+    font-size:large;
+    align-self: center;
+}
+.date{
+    
+    
+}
 /* Projects Section */
 
 .proj-container, .ed-container {
@@ -460,9 +514,15 @@ button{
 @media (max-width: 1100px) {
     .nav-bar{
         display: none;
-        
-
     }
+    .hamburger-img{
+        display: flex;
+    }
+    .activate-nav{
+        display: flex;
+    }
+
+
     #about-me{
         height:200vh;
     }
@@ -488,31 +548,19 @@ button{
 
         
     }
-     .menu-line {
-        width: 20px;
-        height: 3px;
-        background-color:whitesmoke;
-        margin-bottom: 4px;
-        position:fixed;
-        top:10px;
-        left:10px;
-        display: flex;
-    
-    }
+
     /* .aboutme-p{
         font-size: 12px;
     } */
    .experience-card{
        height:25rem
    }
-    .proj-container,.poetry-row,.ed-container{
+    .proj-container,.poetry-row,.ed-container, .skills-row{
         display: flex;
         flex-wrap: wrap;
     }
     .poetry-row{
         height: 50%;
-
-        
     }
     .row1{
         position: absolute;
