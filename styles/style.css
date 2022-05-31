@@ -7,7 +7,7 @@ html {
 
 * {
     box-sizing: border-box;
-    /* border: 1px solid black !important; */
+    border: 1px solid black !important;
     font-family: 'Cinzel' ,sans-serif;
     /* padding: 0;
     margin:0; */
@@ -169,14 +169,16 @@ h1 {
 
 
 
-.experience{
+.experience-card{
     background-color: white;
     height: 15rem;
     width: 80%;
-    box-shadow: 10px 5px 5px #14213d;
-   
-   
+    box-shadow: 10px 5px 5px #14213d;display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
+
+/* Projects Section */
 
 .proj-container, .ed-container {
   height:92.4vh;
@@ -192,12 +194,60 @@ h1 {
     width:50vh;
     box-shadow: 10px 5px 5px #14213d;
 }
+
+
+.proj-card-header{
+    background-color: #fca311;
+    color: white;
+    font-size: 1.2rem;
+}
+.robot-container{
+    height:50%;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    
+}
+.robot-img{
+    height:100%;
+    width: 55%;
+}
+.robot-text, .Evtol-text{
+    font-size: 1rem;
+    text-align: 1.1rem;
+    letter-spacing: 1px;
+    margin-top: 0.7rem;
+    text-align: center;
+    height: 100%;
+}
+.Evtol-img {
+    height: 100%;
+    width: 100%;
+}
+/* Education Section */
 .ed-card{
     background: whitesmoke;
     height: 20vh;
     width: 50vh;
     box-shadow: 10px 5px 5px #14213d;
+    display:flex;
 }
+.ucsd-container{
+    height:40%;
+    width:30%;
+    align-self: center;
+}
+.GA-container{
+    height:40%;
+    width:20%;
+    align-self:center
+}
+.ucsd-img,.GA-img {
+    height: 100%;
+    width:100%;
+   
+}
+.GA-text-container
 
 /* Interests Section */
 .poetry-logo{
@@ -228,6 +278,8 @@ h1 {
     width: 15rem;
     box-shadow: 10px 5px 5px #14213d;
 }
+
+
 .poetry-img{
     /* background:red; */
     height:100%;
