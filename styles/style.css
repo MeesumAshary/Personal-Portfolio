@@ -63,9 +63,7 @@ body{
 .hamburger-img{
     height: 2rem;
     width: 2rem;
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    position: fixed;
     display:none;
 }
 
@@ -268,15 +266,21 @@ h1 {
     font-size:xx-large;
     font-weight:900;
     text-decoration: underline;
+    color:#14213d;
     
 }
 .exp-sub-heading{
     font-size:large;
     align-self: center;
+    color: #14213d;
 }
 .date{
-    
-    
+    color: #14213d;
+    font-weight: 500;
+}
+.exp-text{
+    margin: 2rem;
+   
 }
 /* Projects Section */
 
@@ -324,7 +328,10 @@ h1 {
     height: 100%;
     width: 100%;
 }
-
+.proj-link{
+    color: #fca311;
+    text-decoration: underline;
+}
 /* Education Section */
 .ed-card{
     background: whitesmoke;
@@ -333,6 +340,7 @@ h1 {
     box-shadow: 10px 5px 5px #14213d;
     display:flex;
 }
+
 .ucsd-container{
     height:40%;
     width:30%;
@@ -341,14 +349,18 @@ h1 {
 .GA-container{
     height:40%;
     width:20%;
-    align-self:center
+    align-self:center;
+    margin-right:1rem;
 }
 .ucsd-img,.GA-img {
     height: 100%;
     width:100%;
    
 }
-.GA-text-container{
+.GA-text-container,.ucsd-text-container{
+display: flex;
+flex-direction: column;
+justify-content: center
 
 }
 
@@ -391,6 +403,7 @@ h1 {
 
 .poetry-img:hover{
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .modal-bg, .modal-bg-2, .modal-bg-3, .modal-bg-4, .modal-bg-5,.modal-bg-6 {

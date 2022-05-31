@@ -37,7 +37,7 @@ const modalCloseContainer6 = document.querySelector('.modal-close-container-6');
 
 // The following code allows us to use side nav elements
 const hamburgerEl = document.querySelector('.hamburger-img');
-const navClose=document.querySelector('.nav-close')
+const navClose = document.querySelector('.nav-close');
 const smallNav = document.querySelector('.small-nav');
 // The following code is for the form on the 'Contact' section
 
@@ -95,9 +95,9 @@ btn.addEventListener('click', createObjects);
 
 // The following code activates small Nav
 hamburgerEl.addEventListener('click', () => {
-	smallNav.classList.add('activate-nav')
+	smallNav.classList.add('activate-nav');
 });
-navClose.addEventListener('click',() => {
+navClose.addEventListener('click', () => {
 	smallNav.classList.remove('activate-nav');
 });
 
